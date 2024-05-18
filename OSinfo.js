@@ -9,7 +9,7 @@ const axios = require('axios');
 require("dotenv").config({ path: path.resolve(__dirname, '.env') });
 
 app.use(bodyParser.urlencoded({ extended: false }));
-console.log(`Web server started and running at http://localhost:${5002}`);
+console.log(`Web server started and running at 5002`);
 console.log(`Stop to shutdown the server:`);
 app.listen(5002);
 app.set("views", path.resolve(__dirname,"templates"));
