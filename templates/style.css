@@ -1,0 +1,9 @@
+body {
+    font-size: 14px;
+    margin: 1rem;
+    background-color:black;
+    border-width: 0.5rem;
+    border-color: #ffffff;
+    color: white;
+    font-family: sans-serif;
+}

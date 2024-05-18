@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Get OS Info</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel= "stylesheet" href = "/style.css" type = "text/css">
+</head>
+
+<body>
+	<h1>Operating System Information</h1>
+	<form action="http://localhost:5002/getOSInfo" method="post">
+            <legend>
+                <strong>Please provide the following information:</strong>
+            </legend>
+			<br>
+			<label>Name: <input type="text" name="name"/></label>
+			<br><br>
+			<label>Email Address: <input type="email" name="email"  placeholder="example@notreal.notreal"></label>
+			<br><br>
+			<label>City: <input type="text" name="city"/></label>
+			<br><br><legend>Operating System:</legend>
+			<label><input type="radio" name="OS" value="Linux">Linux</label>
+	    	<label><input type="radio" name="OS" value="Mac">Mac OS</label>
+			<label><input type="radio" name="OS" value="Windows">Windows</label>
+			<br><br>
+			<legend>Additional OS Information:</legend>
+			<label><textarea rows="5" cols="80" name="additionalInformation" placeholder="ex: Windmac OS Version 1.0"></textarea></label>
+		<br>
+		<input type="reset"/>
+		<input type="submit" value="Submit"/>
+		<br><br><a href="/">Main Menu</a>
+	</form>
+</body>
+
+</html>

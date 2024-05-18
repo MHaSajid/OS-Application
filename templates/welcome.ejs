@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <link rel= "stylesheet" href = "/style.css" type = "text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8"> 
+		<title>Welcome Page</title>	
+	</head>
+
+	<body>
+		<h1>Welcome to the Operating System Application</h1>
+        <img src="OS.jpg" width = 500px alt = "Operating Systems">
+		<h2>Submit OS Information</h2>
+        <div id = "OSInfo"></div>
+        <hr>
+        <h2>Retrieve OS information</h2>
+        <div id = "RetrieveInfo"></div>
+        <script>
+            let list1 = `<ul><li>To provide OS information select <a href="/getOSInfo">Give Info</a></li></ul>`;
+            document.getElementById("OSInfo").innerHTML = list1;
+            let list2 = `<ul><li>To lookup OS information select <a href="/lookupOSInfo">Lookup Info</a></li></ul>`;
+            document.getElementById("RetrieveInfo").innerHTML = list2;
+
+        </script>
+   </body>
+</html>

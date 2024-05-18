@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8"> 
+		<title>Look up OS info</title>	
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href = "/style.css" type = "text/css">
+	</head>
+
+	<body>
+		<h1>Retrieve Operating System Information</h1>
+        <hr>
+        <h2>Please enter your email to lookup the OS information:</h2>
+        <form action= "http://localhost:5002/lookupOSInfo" method= "post">
+            <label><strong>Email Address: </strong><input type="email" name="email"></label>
+            <br><br><input type="reset">
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <br><a href="/">Main Menu</a>
+   </body>
+</html>
